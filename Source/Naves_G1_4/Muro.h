@@ -18,16 +18,6 @@ public:
 
 	UStaticMeshComponent* MallaMuro;
 
-
-public:
-	TArray<AMuro*> Muros;
-	// Número de muros a generar
-	int32 NumeroMuros = 10;
-
-	// Distancia entre muros
-	float Espaciado = 400.0f;
-
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,18 +26,17 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	virtual void MoverMuro(float DeltaTime);
-	void GenerarMuros();
+
 public:
 	// Variables de movimiento
 
-	FVector PuntoInicio;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector Destino;
-	FVector PuntoDestino;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float VelocidadMovimiento = 150.0f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Tolerancia = 50.0f;
-
-	bool bHaciaDestino = true;
 
 };

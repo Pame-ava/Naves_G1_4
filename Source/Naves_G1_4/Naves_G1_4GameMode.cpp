@@ -3,11 +3,13 @@
 #include "Naves_G1_4GameMode.h"
 #include "Naves_G1_4Pawn.h"
 #include "Muro.h"
+#include "Engine/World.h"
 
 ANaves_G1_4GameMode::ANaves_G1_4GameMode()
 {
 	// set default pawn class to our character class
 	DefaultPawnClass = ANaves_G1_4Pawn::StaticClass();
+    PrimaryActorTick.bCanEverTick = true;
 }
 void ANaves_G1_4GameMode::BeginPlay()
 {

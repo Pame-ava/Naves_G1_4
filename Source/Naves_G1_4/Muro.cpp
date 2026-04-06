@@ -14,9 +14,8 @@ AMuro::AMuro()
     MallaMuro = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MallaMuro"));
     RootComponent = MallaMuro;
 
-    // Aquí puedes usar un cubo como base del muro
+    // Usar un cubo como base del muro
     static ConstructorHelpers::FObjectFinder<UStaticMesh> MallaAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
-
     if (MallaAsset.Succeeded())
     {
         MallaMuro->SetStaticMesh(MallaAsset.Object);
@@ -27,15 +26,10 @@ AMuro::AMuro()
 
     // Asignar material de ladrillos
     static ConstructorHelpers::FObjectFinder<UMaterial> MaterialAsset(TEXT("Material'/Game/StarterContent/Materials/M_Brick_Clay_New.M_Brick_Clay_New'"));
-
     if (MaterialAsset.Succeeded())
     {
         MallaMuro->SetMaterial(0, MaterialAsset.Object);
     }
-
-    // Definir puntos de movimiento
-    PuntoInicio = FVector(0, 0, 0);
-    PuntoDestino = FVector(800, 0, 0);
 }
 
 
@@ -43,9 +37,7 @@ AMuro::AMuro()
 // Called when the game starts or when spawned
 void AMuro::BeginPlay()
 {
-	Super::BeginPlay();
-    GenerarMuros();
-    SetActorLocation(PuntoInicio);
+    Super::BeginPlay();
 
 }
 
@@ -56,49 +48,24 @@ void AMuro::Tick(float DeltaTime)
     MoverMuro(DeltaTime);
 
 }
-void AMuro::GenerarMuros()
-{
-    //Muros.Empty();
 
-    UWorld* World = GetWorld();
-    if (!World) return;
-
-
-    for (int32 i = 0; i < NumeroMuros; i++)
-    {
-        // Posiciones alternadas para simular pasillos
-        float X = i * Espaciado;
-        float Y = (i % 2 == 0) ? 0 : Espaciado;
-
-        FVector Posicion = GetActorLocation() + FVector(X, Y, 0);
-        FRotator Rotacion = FRotator::ZeroRotator;
-
-        AMuro* NuevoMuro = World->SpawnActor<AMuro>(AMuro::StaticClass(), Posicion, Rotacion);
-        if (NuevoMuro)
-        {
-            Muros.Add(NuevoMuro);
-        }
-    }
-}
 void AMuro::MoverMuro(float DeltaTime)
 {
     FVector PosicionActual = GetActorLocation();
-    FVector Objetivo = bHaciaDestino ? PuntoDestino : PuntoInicio;
+    FVector Objetivo = Destino; // usar el destino asignado por el GameMode
 
     float Distancia = FVector::Dist(PosicionActual, Objetivo);
 
     if (Distancia <= Tolerancia)
     {
-        // Cambiar dirección
-        bHaciaDestino = !bHaciaDestino;
+        // puedes cambiar a un nuevo destino aquí si quieres
     }
     else
     {
-        // Mover hacia el objetivo
         FVector Direccion = (Objetivo - PosicionActual).GetSafeNormal();
         FVector NuevaUbicacion = PosicionActual + Direccion * VelocidadMovimiento * DeltaTime;
         SetActorLocation(NuevaUbicacion);
     }
-
 }
+
 
