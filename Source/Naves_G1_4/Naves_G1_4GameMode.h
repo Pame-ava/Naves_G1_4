@@ -6,8 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "Naves_G1_4GameMode.generated.h"
 
-class APawn;
-class Amuro;
+//class APawn;
+class AMuro;
 
 UCLASS(MinimalAPI)
 class ANaves_G1_4GameMode : public AGameModeBase
@@ -32,7 +32,7 @@ private:
     // Área de spawn
     float LimiteSpawn = 1000.0f;
 
-    void GenerarMuros()
+    void GenerarMuros();
 
 };
 
