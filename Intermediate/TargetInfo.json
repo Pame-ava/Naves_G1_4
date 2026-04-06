@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Naves_G1_4",
+			"Path": "C:\\Users\\hp VICTUS\\Documents\\Unreal Projects\\Naves_G1_4\\Source\\Naves_G1_4.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Naves_G1_4Editor",
+			"Path": "C:\\Users\\hp VICTUS\\Documents\\Unreal Projects\\Naves_G1_4\\Source\\Naves_G1_4Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
