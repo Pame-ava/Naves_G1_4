@@ -1,0 +1,2 @@
+C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Definitions.Naves_G1_4.h
+C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Source\Naves_G1_4\Naves_G1_4.h

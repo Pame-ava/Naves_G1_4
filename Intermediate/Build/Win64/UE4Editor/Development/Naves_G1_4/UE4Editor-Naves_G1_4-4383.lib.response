@@ -1,0 +1,31 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Naves_G1_4-4383.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\Naves_G1_4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\EnemigoExtraterrestre.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Laberinto.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Muro.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroDivisible.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroFantasma.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroRapido.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4GameMode.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4Pawn.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4Projectile.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\EnemigoExtraterrestre.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Laberinto.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Muro.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroDivisible.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroFantasma.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\MuroRapido.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4.init.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4GameMode.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4Pawn.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Naves_G1_4Projectile.gen.cpp.obj"
+"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\Default.rc2.res"
+/OUT:"C:\Users\hp VICTUS\Documents\Unreal Projects\Naves_G1_4\Intermediate\Build\Win64\UE4Editor\Development\Naves_G1_4\UE4Editor-Naves_G1_4-4383.lib"

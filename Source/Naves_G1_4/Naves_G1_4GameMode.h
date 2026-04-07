@@ -8,6 +8,10 @@
 
 //class APawn;
 class AMuro;
+class AMuroRapido;
+class AMuroFantasma;
+class AMuroDivisible;
+class AEnemigoextraterrestre;
 
 UCLASS(MinimalAPI)
 class ANaves_G1_4GameMode : public AGameModeBase

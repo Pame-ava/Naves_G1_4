@@ -3,6 +3,9 @@
 #include "Naves_G1_4GameMode.h"
 #include "Naves_G1_4Pawn.h"
 #include "Muro.h"
+#include "MuroRapido.h"
+#include "MuroFantasma.h"
+#include "MuroDivisible.h"
 #include "Engine/World.h"
 
 ANaves_G1_4GameMode::ANaves_G1_4GameMode()
@@ -42,11 +45,22 @@ void ANaves_G1_4GameMode::GenerarMuros()
             0.0f
         );
 
-        AMuro* NuevoMuro = World->SpawnActor<AMuro>(
-            AMuro::StaticClass(),
-            Ubicacion,
-            FRotator::ZeroRotator
-        );
+        FRotator Rotacion = FRotator::ZeroRotator;
+        AMuro* NuevoMuro = nullptr;
+
+        // Alternar tipos de muros
+        if (i % 3 == 0)
+        {
+            NuevoMuro = World->SpawnActor<AMuroRapido>(AMuroRapido::StaticClass(), Ubicacion, Rotacion);
+        }
+        else if (i % 3 == 1)
+        {
+            NuevoMuro = World->SpawnActor<AMuroFantasma>(AMuroFantasma::StaticClass(), Ubicacion, Rotacion);
+        }
+        else
+        {
+            NuevoMuro = World->SpawnActor<AMuroDivisible>(AMuroDivisible::StaticClass(), Ubicacion, Rotacion);
+        }
 
         if (NuevoMuro)
         {

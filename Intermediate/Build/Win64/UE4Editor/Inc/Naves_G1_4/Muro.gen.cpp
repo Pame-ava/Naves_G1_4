@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMuro() {}
 	NAVES_G1_4_API UClass* Z_Construct_UClass_AMuro();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Naves_G1_4();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void AMuro::StaticRegisterNativesAMuro()
 	{
@@ -31,6 +32,19 @@ void EmptyLinkFunctionForGeneratedCodeMuro() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Destino_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Destino;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VelocidadMovimiento_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VelocidadMovimiento;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Tolerancia_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Tolerancia;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +58,34 @@ void EmptyLinkFunctionForGeneratedCodeMuro() {}
 		{ "ModuleRelativePath", "Muro.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuro_Statics::NewProp_Destino_MetaData[] = {
+		{ "Category", "Muro" },
+		{ "Comment", "// Variables de movimiento\n" },
+		{ "ModuleRelativePath", "Muro.h" },
+		{ "ToolTip", "Variables de movimiento" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMuro_Statics::NewProp_Destino = { "Destino", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuro, Destino), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_AMuro_Statics::NewProp_Destino_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuro_Statics::NewProp_Destino_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuro_Statics::NewProp_VelocidadMovimiento_MetaData[] = {
+		{ "Category", "Muro" },
+		{ "ModuleRelativePath", "Muro.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMuro_Statics::NewProp_VelocidadMovimiento = { "VelocidadMovimiento", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuro, VelocidadMovimiento), METADATA_PARAMS(Z_Construct_UClass_AMuro_Statics::NewProp_VelocidadMovimiento_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuro_Statics::NewProp_VelocidadMovimiento_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMuro_Statics::NewProp_Tolerancia_MetaData[] = {
+		{ "Category", "Muro" },
+		{ "ModuleRelativePath", "Muro.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMuro_Statics::NewProp_Tolerancia = { "Tolerancia", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMuro, Tolerancia), METADATA_PARAMS(Z_Construct_UClass_AMuro_Statics::NewProp_Tolerancia_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMuro_Statics::NewProp_Tolerancia_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMuro_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuro_Statics::NewProp_Destino,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuro_Statics::NewProp_VelocidadMovimiento,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMuro_Statics::NewProp_Tolerancia,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMuro_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMuro>::IsAbstract,
 	};
@@ -53,11 +95,11 @@ void EmptyLinkFunctionForGeneratedCodeMuro() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AMuro_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AMuro_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMuro_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMuro_Statics::Class_MetaDataParams))
@@ -71,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeMuro() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMuro, 91869554);
+	IMPLEMENT_CLASS(AMuro, 3116344013);
 	template<> NAVES_G1_4_API UClass* StaticClass<AMuro>()
 	{
 		return AMuro::StaticClass();
