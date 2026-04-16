@@ -13,5 +13,13 @@ UCLASS()
 class NAVES_G1_4_API AExtraterrestreGuerrero : public AEnemigoExtraterrestre
 {
 	GENERATED_BODY()
-	
+public:
+	AExtraterrestreGuerrero();
+
+	virtual void MoverExtraterrestre(float DeltaTime) override;
+	virtual void Disparar();
+
+private:
+	float TiempoAcumuladoDisparo;
+	float IntervaloDisparo;
 };
